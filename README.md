@@ -6,7 +6,7 @@ Notre but est de créer un site pour une agence quelconque.
 
 ## Comment accéder au site de l'agence ?
 
-Pour accéder au site, vous pouvez y accéder grâce au lien suivant : [Immo](sachagor.github.com "Immo").
+Pour accéder au site, vous pouvez y accéder grâce au lien suivant : [Immo](sachagor.github.com/Immo "Immo").
 
 ## Conclusion
 
