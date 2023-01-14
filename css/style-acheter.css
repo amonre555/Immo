@@ -11,6 +11,7 @@
 
 body{
     margin: 0;
+    min-height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
 }
@@ -75,8 +76,7 @@ header nav .right button:hover{
 }
 
 .acheter-links{
-    margin: 0;
-    padding: 0;
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
@@ -84,7 +84,7 @@ header nav .right button:hover{
 }
 
 .acheter-links button{
-    margin-top: 20px;
+    margin: 20px;
     padding: 15px 20px;
     font-size: 15px;
     border-radius: 10px;
@@ -134,7 +134,7 @@ header nav .right button:hover{
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
+}copy
 
 .infos .infos-description{
     width: 100%;

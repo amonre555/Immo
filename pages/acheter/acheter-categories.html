@@ -5,15 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acheter</title>
+    <link rel="stylesheet" href="../../css/style-acheter.css">
 </head>
 <body>
-    <ul>
-        <li><a href="acheter-appartements.html">appartements</a></li>
-        <li><a href="acheter-immeubles.html">immeuble</a></li>
-        <li><a href="acheter-locaux.html">locaux-commerciaux</a></li>
-        <li><a href="acheter-maisons.html">maisons</a></li>
-        <li><a href="acheter-terrain.html">terrains-nus</a></li>
-    </ul>
-    <a href="../../index.html">Retour</a>
+    <header>
+        <nav>
+            <h1><a href="/">Immobilier</a></h1>
+            <div class="right">
+                <p><a href="pages/acheter/acheter-categories.html">Acheter</a></p>
+                <p><a href="#">Vendre</a></p>
+                <p><a href="#">Louer</a></p>
+                <button onclick="window.location.href = '/pages/contact.html';">Contact</button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="acheter-links">
+        <button onclick="window.location.href = 'acheter-appartements.html';">Appartements</button>
+        <button onclick="window.location.href = 'acheter-immeubles.html';">Immeubles</button>
+        <button onclick="window.location.href = 'acheter-locaux.html';">Locaux</button>
+        <button onclick="window.location.href = 'acheter-maisons.html';">Maisons</button>
+        <button onclick="window.location.href = 'acheter-terrain.html';">Terrains-nus</button>
+    </section>
+
+    <footer>
+        <div class="column">
+            <h3>Achat</h3>
+            <p>Maison</p>
+            <p>Apartement</p>
+            <p>Locaux</p>
+            <p>Terrains</p>
+            <p>Immeubles</p>
+        </div>
+        <div class="column">
+            <h3>Vente</h3>
+            <p>Maison</p>
+            <p>Apartement</p>
+            <p>Locaux</p>
+            <p>Terrains</p>
+            <p>Immeubles</p>
+        </div>
+    </footer>
 </body>
 </html>
