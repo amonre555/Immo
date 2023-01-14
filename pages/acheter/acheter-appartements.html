@@ -5,13 +5,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acheter</title>
+    <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body>
-    <ul>
-        <li><a href="../appartements/appart1.html">appart1</a></li>
-        <li><a href="../appartements/appart2.html">appart2</a></li>
-        <li><a href="../appartements/appart3.html">appart3</a></li>
-    </ul>
-    <a href="acheter-categories.html">Retour</a>
+    <header>
+        <nav>
+            <h1><a href="/">Immobilier</a></h1>
+            <div class="right">
+                <p><a href="pages/acheter/acheter-categories.html">Acheter</a></p>
+                <p><a href="#">Vendre</a></p>
+                <p><a href="#">Louer</a></p>
+                <button onclick="window.location.href = '/pages/contact.html';">Contact</button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="liens-biens">
+        <div class="biens">
+            <div class="biens-description">
+                <h1>Appartement 1</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Proin consequat tincidunt metus, efficitur mattis nisl. 
+                    Sed risus orci, aliquam et tortor viverra, ultricies porttitor est. 
+                    Morbi vel diam in arcu sagittis feugiat eget ac diam. Nulla euismod suscipit elementum. 
+                    Nam sed lacus eget lorem maximus condimentum ut quis odio.
+                </p>
+                <button onclick="window.location.href = '../appartements/appart1.html';">En savoir plus</button>
+            </div>
+            <div class="biens-img">
+                <img onclick="window.location.href = '../appartements/appart1.html';" src="../../img/appart/appart1/appart1.jpg" alt="">
+            </div>
+        </div>
+        <div class="biens">
+            <div class="biens-description">
+                <h1>Appartement 2</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Proin consequat tincidunt metus, efficitur mattis nisl. 
+                    Sed risus orci, aliquam et tortor viverra, ultricies porttitor est. 
+                    Morbi vel diam in arcu sagittis feugiat eget ac diam. Nulla euismod suscipit elementum. 
+                    Nam sed lacus eget lorem maximus condimentum ut quis odio.
+                </p>
+                <button onclick="window.location.href = '../appartements/appart2.html';">En savoir plus</button>
+            </div>
+            <div class="biens-img">
+                <img src="../../img/appart/appart1/appart1.jpg" alt="">
+            </div>
+        </div>
+        <div class="biens">
+            <div class="biens-description">
+                <h1>Appartement 3</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Proin consequat tincidunt metus, efficitur mattis nisl. 
+                    Sed risus orci, aliquam et tortor viverra, ultricies porttitor est. 
+                    Morbi vel diam in arcu sagittis feugiat eget ac diam. Nulla euismod suscipit elementum. 
+                    Nam sed lacus eget lorem maximus condimentum ut quis odio.
+                </p>
+                <button onclick="window.location.href = '../appartements/appart2.html';">En savoir plus</button>
+            </div>
+            <div class="biens-img">
+                <img src="../../img/appart/appart1/appart1.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="column">
+            <h3>Achat</h3>
+            <p>Maison</p>
+            <p>Apartement</p>
+            <p>Locaux</p>
+            <p>Terrains</p>
+            <p>Immeubles</p>
+        </div>
+        <div class="column">
+            <h3>Vente</h3>
+            <p>Maison</p>
+            <p>Apartement</p>
+            <p>Locaux</p>
+            <p>Terrains</p>
+            <p>Immeubles</p>
+        </div>
+    </footer>
 </body>
 </html>
