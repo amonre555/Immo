@@ -145,6 +145,40 @@ header nav .right button:hover{
 .infos{
     margin: 0;
 }
+.presentation-biens{
+    padding: 30px 5%;
+    margin-top: 5%;
+    color: #000000;
+}
+
+.presentation-biens h1{
+    color: #2948ff;
+    margin: 0;
+    padding-bottom: 30px;
+    font-size: 4vw;
+    text-align: center;
+    width: 100%;
+}
+
+.presentation-biens .img-biens{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.presentation-biens .img-biens img{
+    opacity: 1;
+    display:inline-block;
+    width: 25%;    
+    transition: 0.3s;
+    cursor: pointer;
+    transform: scale(1);
+}
+
+.presentation-biens .img-biens img:hover{
+    opacity: 0.5;
+    transform: scale(1.1);
+}
 
 footer{
     margin: 0;
@@ -204,6 +238,22 @@ footer p:hover{
 
     .infos .img-infos{
         display: none;
+    }
+
+    .presentation-biens h1{
+        font-size: 2em;
+    }
+
+    .presentation-biens .img-biens{
+        display: inline-block
+    }
+
+    .presentation-biens .img-biens img{
+        padding: 10px 0 10px 0;
+        width: 100%;
+    }
+    .presentation-biens .img-biens img:hover{
+        transform: scale(1.05);
     }
 
     footer{
