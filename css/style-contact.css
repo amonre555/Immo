@@ -303,8 +303,12 @@ header nav .right button:hover{
 }
 
 .contact-section h1{
+    color: #2948ff;
+    margin: 0;
+    padding-bottom: 30px;
+    font-size: 4vw;
     text-align: center;
-    color: #396afc;
+    width: 100%;
 }
 
 .contact-section .contact-form{
@@ -481,6 +485,10 @@ footer p:hover{
     .others-biens-img img:hover{
         cursor: pointer;
         transform: scale(1.1);
+    }
+    
+    .contact-section h1{
+        font-size: 2em;
     }
 
     footer{
