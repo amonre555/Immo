@@ -265,7 +265,6 @@ header nav .right button:hover{
 }
 
 .content-biens img{
-    border-radius: 10px;
     padding-top: 5%;
     width: 90%;
 }
@@ -281,6 +280,10 @@ header nav .right button:hover{
 
 .content-biens .presentation-biens img{
     width: 95%;
+}
+
+.content-biens .img-biens img {
+    border-radius: 10px;
 }
 
 .others-biens-img{
@@ -342,16 +345,17 @@ header nav .right button:hover{
     font-size: 40px;
 }
 
-.caracteristiques-section .emplacement{
+.emplacement{
+    padding: 30px 5%;
     width: 100%;
 }
 
-.caracteristiques-section .emplacement h3{
+.emplacement h3{
     color: #396afc;
     font-size: 40px;
 }
-.caracteristiques-section .emplacement iframe{
-    width: 100%;
+.emplacement iframe{
+    width: 90%;
 }
 
 .contact-section{
@@ -547,6 +551,15 @@ footer p:hover{
 
     .caracteristiques-content .caracteristiques img{
         width: 90%;
+    }
+
+    .caracteristiques-section .description .caracteristiques-content{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .caracteristiques-section .description .caracteristiques-content .caracteristiques img{
+        width: 25%;
     }
 
     footer{
