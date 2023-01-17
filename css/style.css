@@ -177,7 +177,6 @@ header nav .right button:hover{
 
 .presentation-biens{
     padding: 30px 5%;
-    margin-top: 5%;
     color: #000000;
 }
 
@@ -248,7 +247,7 @@ header nav .right button:hover{
 
 .liens-biens .biens .biens-img img{
     cursor: pointer;
-    width: 75%;
+    width: 450px;
     transform: scale(1);
     transition: 0.3s;
 }
@@ -259,27 +258,38 @@ header nav .right button:hover{
 }
 
 .content-biens{
-    padding: 30px 5%;
+    padding: 30px;
     color: #000000;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start
+}
+
+.content-biens img{
+    border-radius: 10px;
+    padding-top: 5%;
+    width: 90%;
 }
 
 .content-biens .presentation-biens h1{
+    padding-top: 5%;
+    text-align: start;
     color: #2948ff;
     margin: 0;
-    font-size: 3vw;
+    font-size: 30px;
     width: 100%;
+}
+
+.content-biens .presentation-biens img{
+    width: 95%;
 }
 
 .others-biens-img{
     padding: 30px 5%;
     text-align: right;
+    object-fit: cover;
 }
 
 .others-biens-img img{
-    
     margin: 8px;
     display: inline-block;
     width: 10%;
@@ -292,8 +302,56 @@ header nav .right button:hover{
     transform: scale(1.1);
 }
 
-.others-biens-img img:nth-child(1){
-    display: none;
+.caracteristiques-section{
+    color: #000000;
+    padding: 30px 5%;
+    width: 65%;
+    margin-right: auto;
+}
+
+.caracteristiques-section .description{
+    margin-bottom: 4%;
+}
+
+.caracteristiques-section .description h2{
+    color: #396afc;
+}
+
+.caracteristiques-section .description .caracteristiques-content{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 20px;
+    grid-auto-rows: 50px;
+}
+
+.caracteristiques-section .description .caracteristiques-content .caracteristiques{
+    display: flex;
+    align-items: center;
+}
+
+.caracteristiques-section .description .caracteristiques img{
+    height: 100%;
+}
+
+.caracteristiques-section .avis{
+    margin-bottom: 2%;
+}
+
+.caracteristiques-section .avis h3{
+    color: #396afc;
+    font-size: 40px;
+}
+
+.caracteristiques-section .emplacement{
+    width: 100%;
+}
+
+.caracteristiques-section .emplacement h3{
+    color: #396afc;
+    font-size: 40px;
+}
+.caracteristiques-section .emplacement iframe{
+    width: 100%;
 }
 
 .contact-section{
