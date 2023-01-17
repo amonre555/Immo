@@ -241,6 +241,39 @@ header nav .right button:hover{
     transition: box-shadow 0.3s;
 }
 
+.liens-biens .biens .biens-description button a{
+    color: #000000;
+    text-decoration: none;
+}
+
+.liens-biens .biens .biens-description button{
+    margin-top: 20px;
+    padding: 15px 20px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+}
+
+.liens-biens .biens .bien-btn button a{
+    color: #000000;
+    text-decoration: none;
+}
+
+.liens-biens .biens .bien-btn button{
+    display: none;
+    margin-top: 10px;
+    padding: 15px 20px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+}
+
 .liens-biens .biens .biens-description button:hover{
     box-shadow: 2px 5px 5px gray;
 }
@@ -519,6 +552,14 @@ footer p:hover{
         display: none;
     }
     
+    .liens-biens .biens .bien-btn button{
+        display: block;
+    }
+
+    .liens-biens .biens .bien-btn a{
+        text-decoration: none;
+    }
+
     .content-biens{
         display: inline-block;
     }
