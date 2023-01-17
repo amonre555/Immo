@@ -405,6 +405,11 @@ header nav .right button:hover{
     box-shadow: 2px 5px 5px gray;
 }
 
+.caracteristiques-content{
+    color: #000000;
+    padding: 30px 5%;
+}
+
 footer{
     position: sticky;
     top: 100%;
@@ -538,6 +543,10 @@ footer p:hover{
     .others-biens-img img:hover{
         cursor: pointer;
         transform: scale(1.1);
+    }
+
+    .caracteristiques-content .caracteristiques img{
+        width: 90%;
     }
 
     footer{
