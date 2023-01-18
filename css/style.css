@@ -311,6 +311,10 @@ header nav .right button:hover{
     width: 100%;
 }
 
+.content-biens .presentation-biens ul{
+    list-style: none;
+}
+
 .content-biens .presentation-biens img{
     width: 95%;
 }
@@ -380,7 +384,7 @@ header nav .right button:hover{
 
 .emplacement{
     padding: 30px 5%;
-    width: 100%;
+    width: 90%;
 }
 
 .emplacement h3{
