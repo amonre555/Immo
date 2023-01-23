@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 3em;
+    color: #2948ff;
+}
+h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3em;
+}
+h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+}
+h4{
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.85em;
+    color: rgb(180, 180, 180);
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+h2,h3{
+    color:#396afc
+}
+body{
+    background-color: white;
+}
+header{
+    background: linear-gradient(#396afc, #2948ff);
+}
+
+header nav{
+    padding: 30px 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav h1{
+    margin: 0;
+    text-transform: uppercase;
+}
+
+header nav h1 a{
+    text-decoration: none;
+    color: #ffffff;;
+}
+
+header nav .right{
+    display: flex;
+    align-items: center;
+}
+
+header nav .right p{
+    margin: 0 15px 0 0;
+}
+
+header nav .right p a{
+    color: #ffffff;
+    text-decoration: none;
+    letter-spacing: 0px;
+    transition: letter-spacing 0.3s, color 0.3s;
+}
+
+header nav .right p a:hover{
+    letter-spacing: 1px;
+    color: #cccccc;
+}
+
+header nav .right .btn-contact{
+    color: #ffffff;
+    padding: 5px 15px;
+    font-size: 16px;
+    background-color: inherit;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+header nav .right .btn-contact:hover{
+    color: #2948ff;
+    background-color: #ffffff;
+}
+.logo{
+    height: 80%;
+    width: 10%;
+}
+.Page{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
+}
+.contenu{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+.presentation{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5%;
+}
+.caracs{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    grid-gap: 10%;
+    grid-auto-rows: 50px;
+}
+.un{
+    display: flex;
+    align-items: center;
+}
+.un img{
+    height: 100%;
+    margin-right: 5%;
+}
+.deux{
+    display: flex;
+    align-items: center;
+}
+.deux img{
+    height: 100%;
+    margin-right: 5%;
+}
+.trois{
+    display: flex;
+    align-items: center;
+}
+.trois img{
+    height: 100%;
+    margin-right: 5%;
+}
+.description{
+    margin-bottom: 5%;
+}
+.Avis{
+    margin-bottom: 5%;
+}
+.dessous{
+    width: 80%;
+    margin-right: auto;
+}
+.emplacement{
+    width: 100%;
+}
+.emplacement iframe{
+    width: 100%;
+}
+.consomation{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.Chauffage img{
+    width: 80%;
+}
+.Effet-de-Serre img{
+    width: 80%;
+}
+.texte{
+    width: 30%;
+}
+
+.bilan-energetique{
+    width: 100%;
+    margin-bottom: 5%;
+}
+.texte{
+    display: flex;
+    flex-direction: column;
+}
+.titre{
+    margin-bottom: 15%;
+}
+.location{
+    display: flex;
+    margin-bottom: 15%;
+}
+.location img {
+    height: 20px;
+    margin-right: 1%;
+}
+
+header{
+    margin-bottom: 5%;
+}
+footer{
+    position: sticky;
+    top: 100%;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(#396afc, #2948ff);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+footer h3{
+    text-decoration: underline;
+}
+
+footer p{
+    color: #ffffff;
+    cursor: pointer;
+    letter-spacing: 0px;
+    transition: letter-spacing 0.3s, color 0.3s;
+}
+
+footer p:hover{
+    color: #cccccc;
+    letter-spacing: 1px;
+}
+.consomation p{
+    font-weight:bold ;
+}
+
+#caroussel{
+    width: 800px;
+    border:solid 4px #FFF;
+    height: 500px;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.4);
+    position: relative;
+    overflow: hidden;
+}
+#container{
+    width: 300%;
+    height: 100%;
+}
+.bouton{
+    position: absolute;
+    width: 70px;
+    cursor: pointer;
+    top: 40%;
+}
+#g{
+    left: 0;
+    opacity: 0.4;
+    transform: rotate(180deg);
+    transition: all 0.3s ease;
+}
+#d{
+    right: 0;
+    opacity: 0.4;
+    transform: rotate(0deg);
+    transition: all 0.3s ease;
+}
+#g:hover{
+    transform:rotate(180deg) scale(1.1);
+    opacity: 1;
+}
+#d:hover{
+    transform:rotate(0deg) scale(1.1);
+    opacity: 1;
+}
+.photo{
+    display:inline-block;
+    height:100%;
+    width: 33%;
+    margin: 0;
+    background-size:cover 
+}
