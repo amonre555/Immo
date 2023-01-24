@@ -24,64 +24,47 @@
         <div class="presentation">
             <div class="texte">
                 <div class="titre">
-                    <h1>Terrain rural 1000m²</h1>
+                    <h1>Maison </h1>
                 </div>
                 <div class="location">
                     <img src="https://cdn-icons-png.flaticon.com/512/2838/2838912.png" alt="">
-                    <h2>Lille</h2>
+                    <h2>Leers</h2>
                 </div>
                 <div class="prix">
-                    <h3>150 000€</h3>
+                    <h3>325 000€</h3>
                 </div>
             </div>
-            <div id="caroussel">
-                <div id="container">
+            <div class="photos">
+                <div class="image-principale">
+                    <img src="../../img/terrains/terrain4/img1.jpg" alt="">
                 </div>
-                <img src="arrow-icon-1178.png" class="bouton" id="d">
-                <img src="arrow-icon-1178.png" class="bouton" id="g">
+                <div class="image-secondaires">
+                    <div class="row1"><img src="../../img/terrains/terrain4/img2.jpg" alt="">
+                    <img src="../../img/terrains/terrain4/img3.jpg" alt="">
+                    <img src="../../img/terrains/terrain4/img4.jpg" alt=""></div>
+                    <div class="row2">
+                        <img src="../../img/terrains/terrain4/img5.jpg" alt="">
+                    <img src="../../img/terrains/terrain4/img6.jpg" alt="">
+                    <img src="../../img/terrains/terrain4/img7.jpg" alt="">
+                    </div>
+                    
+                </div>
             </div>
-            <script>
-                document.body.onload=function(){
-                    nbr=3;
-                    p=0;
-                    container=document.getElementById("container");
-                    d=document.getElementById("d");
-                    g=document.getElementById("g");
-                    for(i=1;i<=nbr;i++){
-                        div=document.createElement("div")
-                        div.className="photo";
-                        div.style.backgroundImage="url('../../img/terrains/terrain5/img"+i+".jpg')"
-                        container.appendChild(div);
-                    }
-                }
-                g.onclick=function(){
-                    if(p>-nbr+1)
-                    p--;
-                    container.style.transform="translate("+p*container.offsetWidth/3+"px)";
-                    container.style.transition="all 0.5s ease";
-                }
-                d.onclick=function(){
-                    if(p<0)
-                    p++;
-                    container.style.transform="translate("+p*container.offsetWidth/3+"px)";
-                    container.style.transition="all 0.5s ease";
-                }
-            </script>
         </div>
         <div class="dessous">
             <div class="description">
                 <h2>l'essentiel</h2><br>
                 <div class="caracs">
-                <div class="un"><img src="../../img/chambres picto.png" alt="">
-                <h4>2 chambres</h4>
+                <div class="un"><img src="../../img/pictos/chambres picto.png" alt="">
+                <h4>3 chambres</h4>
                 </div>
                 <div class="deux">
-                    <img src="../../img/sdb picto.png" alt="">
-                    <h4>1 salle de bain</h4>
+                    <img src="../../img/pictos/sdb picto.png" alt="">
+                    <h4>2 salle de bain</h4>
                 </div>
                 <div class="trois">
-                    <img src="../../img/surface picto.png" alt="">
-                    <h4>75m² plus parking</h4>
+                    <img src="../../img/pictos/surface picto.png" alt="">
+                    <h4>200m² avec jardin</h4>
                 </div>    
                 </div>
             </div>
@@ -101,11 +84,11 @@
                 <div class="consomation">
                     <div class="Chauffage">
                         <p>Diagnostique de performances énergétique (DPE)</p><br>
-                        <img src="../../img/consos/perEnergie/conso C.png" alt="">
+                        <img src="../../img/consos/perfEnergie/conso B.png" alt="">
                     </div>
                     <div class="Effet-de-Serre">
                         <p>Indice d'emission à effet de serre (GES)</p><br>
-                        <img src="../../img/consos/effetSerre/effet de serre A.png" alt="">
+                        <img src="../../img/consos/effetSerre/effet de sere C.png" alt="">
                     </div>
                 </div>
             </div>
