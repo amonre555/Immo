@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stephan Plaza Immobilier</title>
-    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/style-biens.css">
 </head>
 <body>
     <header>
@@ -15,93 +15,124 @@
                 <p><a href="../acheter/acheter-categories.html">Acheter</a></p>
                 <p><a href="#">Vendre</a></p>
                 <p><a href="#">Louer</a></p>
-                <button onclick="window.location.href = '../contact.html';">Contact</button>
+                <p><a class="btn-contact" href="../contact.html">Contact</a></p>
             </div>
         </nav>
     </header>
-
-    <section class="content-biens">
-        <div class="presentation-biens">
-            <h1>Local à vendre 4 pièces - 60m²</h1>
-            <p>Location : France</p>
-            <p>Prix : 420 000 €</p>
-            <h1>Caractéristiques</h1>
-            <ul>
-                <li>Extérieur</li>
-                <li>Cadre et situation</li>
-                <li>Surface anexes</li>
-                <li>Hygiène</li>
-            </ul>
-            <img src="../../img/chauffage exemple.jpg" alt="">
-        </div>
-        <div class="img-biens">
-            <img src="../../img/locaux/local1/img1.jpg" alt="">
-        </div>
-    </section>
-
-    <section class="others-biens-img">
-        <img src="../../img/locaux/local1/img2.jpg" alt="">
-        <img src="../../img/locaux/local1/img3.jpg" alt="">
-        <img src="../../img/locaux/local1/img4.jpg" alt="">
-        <img src="../../img/locaux/local1/img5.jpg" alt="">
-        <img src="../../img/locaux/local1/img6.jpg" alt="">
-        <img src="../../img/locaux/local1/img7.jpg" alt="">
-    </section>
-
-    <section class="caracteristiques-section">
-        <div class="description">
-            <h2>L'essentiel</h2>
-            <div class="caracteristiques-content">
-                <div class="caracteristiques">
-                    <img src="https://image.shutterstock.com/image-vector/person-bed-hotel-icon-260nw-657727003.jpg" alt="">
-                    <h4>4 chambres</h4>
+<div class="Page">
+    <div class="contenu">
+        <div class="presentation">
+            <div class="texte">
+                <div class="titre">
+                    <h1>Local 25m²</h1>
                 </div>
-                <div class="caracteristiques">
-                    <img src="https://cdn-icons-png.flaticon.com/512/286/286386.png" alt="">
-                    <h4>Chauffage</h4>
+                <div class="location">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2838/2838912.png" alt="">
+                    <h2>Lille</h2>
                 </div>
-                <div class="caracteristiques">
-                    <img src="https://cdn-icons-png.flaticon.com/512/3198/3198969.png" alt="">
-                    <h4>380m²</h4>
+                <div class="prix">
+                    <h3>7 500€</h3>
                 </div>
             </div>
-
-        <div class="avis">
-            <h3>Avis de l'agent</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fermentum, felis et tincidunt hendrerit, lacus lectus pretium lectus, vitae sollicitudin mauris est at erat.
-               <br> Nunc interdum lorem imperdiet mi auctor, eget malesuada nulla elementum. 
-               <br><br> Nullam volutpat justo eu sollicitudin gravida. Integer aliquam tincidunt urna, in finibus nisi. 
-               <br> Nulla bibendum eros augue, ultricies placerat dolor auctor eget. In consectetur tempor massa, eget pulvinar elit lobortis hendrerit. 
-               <br><br> Sed tortor metus, congue et nulla nec, vulputate vehicula velit. 
-               <br> Nulla vitae nulla vitae lacus ullamcorper porta sit amet vitae enim. Ut et nunc vulputate, maximus eros vel, sodales odio. 
-               <br><br> Proin at turpis a felis congue pulvinar. Duis quis velit tincidunt nisl ornare facilisis at gravida justo. Ut nulla orci, eleifend ac mauris eget, lacinia posuere arcu.
-            </p>
+            <div id="caroussel">
+                <div id="container">
+                </div>
+                <img src="arrow-icon-1178.png" class="bouton" id="d">
+                <img src="arrow-icon-1178.png" class="bouton" id="g">
+            </div>
+            <script>
+                document.body.onload=function(){
+                    nbr=3;
+                    p=0;
+                    container=document.getElementById("container");
+                    d=document.getElementById("d");
+                    g=document.getElementById("g");
+                    for(i=1;i<=nbr;i++){
+                        div=document.createElement("div")
+                        div.className="photo";
+                        div.style.backgroundImage="url('../../img/locaux/local1/img"+i+".jpg')"
+                        container.appendChild(div);
+                    }
+                }
+                g.onclick=function(){
+                    if(p>-nbr+1)
+                    p--;
+                    container.style.transform="translate("+p*container.offsetWidth/3+"px)";
+                    container.style.transition="all 0.5s ease";
+                }
+                d.onclick=function(){
+                    if(p<0)
+                    p++;
+                    container.style.transform="translate("+p*container.offsetWidth/3+"px)";
+                    container.style.transition="all 0.5s ease";
+                }
+            </script>
         </div>
-
-    </section>
-
-    <section class="emplacement">
-        <h3>Emplacement</h3>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20228.25697971604!2d3.21862995!3d50.67294705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c327cc74383821%3A0x40af13e81646260!2s59390%20Lys-lez-Lannoy!5e0!3m2!1sfr!2sfr!4v1673963531105!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </section>
-
-    <footer>
-        <div class="column">
-            <h3>Achat</h3>
-            <p>Maison</p>
-            <p>Apartement</p>
-            <p>Locaux</p>
-            <p>Terrains</p>
-            <p>Immeubles</p>
+        <div class="dessous">
+            <div class="description">
+                <h2>l'essentiel</h2><br>
+                <div class="caracs">
+                <div class="un"><img src="../../img/chambres picto.png" alt="">
+                <h4>2 chambres</h4>
+                </div>
+                <div class="deux">
+                    <img src="../../img/sdb picto.png" alt="">
+                    <h4>1 salle de bain</h4>
+                </div>
+                <div class="trois">
+                    <img src="../../img/surface picto.png" alt="">
+                    <h4>75m² plus parking</h4>
+                </div>    
+                </div>
+            </div>
+            <div class="Avis">
+                <h3>Avis de l'agent</h3><br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fermentum, felis et tincidunt hendrerit, lacus lectus pretium lectus, vitae sollicitudin mauris est at erat.
+                   <br> Nunc interdum lorem imperdiet mi auctor, eget malesuada nulla elementum. 
+                   <br><br> Nullam volutpat justo eu sollicitudin gravida. Integer aliquam tincidunt urna, in finibus nisi. 
+                   <br> Nulla bibendum eros augue, ultricies placerat dolor auctor eget. In consectetur tempor massa, eget pulvinar elit lobortis hendrerit. 
+                   <br><br> Sed tortor metus, congue et nulla nec, vulputate vehicula velit. 
+                   <br> Nulla vitae nulla vitae lacus ullamcorper porta sit amet vitae enim. Ut et nunc vulputate, maximus eros vel, sodales odio. 
+                   <br><br> Proin at turpis a felis congue pulvinar. Duis quis velit tincidunt nisl ornare facilisis at gravida justo. Ut nulla orci, eleifend ac mauris eget, lacinia posuere arcu.
+                </p>
+            </div>
+            <div class="bilan-energetique">
+                <h3>Bilan energetique</h3><br><br><br>
+                <div class="consomation">
+                    <div class="Chauffage">
+                        <p>Diagnostique de performances énergétique (DPE)</p><br>
+                        <img src="../../img/consos/perEnergie/conso C.png" alt="">
+                    </div>
+                    <div class="Effet-de-Serre">
+                        <p>Indice d'emission à effet de serre (GES)</p><br>
+                        <img src="../../img/consos/effetSerre/effet de serre A.png" alt="">
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="column">
-            <h3>Vente</h3>
-            <p>Maison</p>
-            <p>Apartement</p>
-            <p>Locaux</p>
-            <p>Terrains</p>
-            <p>Immeubles</p>
-        </div>
-    </footer>
+        <div class="emplacement">
+                <h3>Emplacement</h3><br>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20228.25697971604!2d3.21862995!3d50.67294705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c327cc74383821%3A0x40af13e81646260!2s59390%20Lys-lez-Lannoy!5e0!3m2!1sfr!2sfr!4v1673963531105!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+</div>
+</div>
+<footer>
+    <div class="column">
+        <h3>Achat</h3>
+        <p>Maison</p>
+        <p>Apartement</p>
+        <p>Locaux</p>
+        <p>Terrains</p>
+        <p>Immeubles</p>
+    </div>
+    <div class="column">
+        <h3>Vente</h3>
+        <p>Maison</p>
+        <p>Apartement</p>
+        <p>Locaux</p>
+        <p>Terrains</p>
+        <p>Immeubles</p>
+    </div>
+</footer>
 </body>
 </html>
