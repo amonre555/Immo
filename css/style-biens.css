@@ -176,10 +176,11 @@ footer h3{
     width: 100%;
 }
 .Chauffage img{
-    width: 80%;
+    width: 100%;
 }
 .Effet-de-Serre img{
-    width: 80%;
+    width: 100%;
+}
 }
 .texte{
     display: flex;
